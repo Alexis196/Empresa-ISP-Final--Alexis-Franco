@@ -1,0 +1,12 @@
+Melocotón Medio
+
+HEX : #fcbe85
+RGB : 252, 190, 133
+HSL  : 28, 95%, 75%
+
+Ocre Suave
+
+
+HEX : #fff2bb
+RGB : 255, 242, 187
+HSL  : 48, 100%, 86%

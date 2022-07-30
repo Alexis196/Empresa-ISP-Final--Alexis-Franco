@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* position: relative; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "cabecera"
+    "principal"
+    "pie";
+    /* background: linear-gradient(rgb(255, 255, 255), rgb(152, 152, 152), rgb(140, 187, 148), rgb(255, 255, 255)); */
+    /* padding-bottom: 3rem; */
+    background-image: linear-gradient(#757575, #848484 ,#a0a0a0, #f2efef);
+    min-height: 100vh;
+}
+
+/*Modificaciones sección index*/
+
+/*estilos del menú de navegación*/
+
+.cabecera{
+    width: 100%;
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    background-color: #656965;
+}
+.list-nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.list{
+    margin: 0.34rem;
+    padding: 0.3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    margin-right: .5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#000
+}
+.list:hover{
+    background-color: #49e149;
+    transition: background-color .6s;
+    border-radius: .5rem;
+}
+.div-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 3rem;
+    margin: 0.1rem;
+}
+.menu-nav{
+    position:absolute;
+    right: 1rem;
+    top:.72rem;
+}
+.menu-img{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/*Estilos del contenido principal*/
+.principal{
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"titlep"
+                        "parrafo"
+                        "section-image";
+    margin: auto;
+    width: 80%;
+    min-height: 85vh;
+    align-items: center;
+    border-bottom: 1px solid #49e149;
+}
+.titlep{
+    grid-area: titlep;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: .15rem .15rem .15rem #32653b;
+    text-align: center;
+    color: #47e147
+}
+#villa{
+    color:rgb(0, 0, 0);
+}
+.parrafo{
+    grid-area: parrafo;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.5rem;
+    border-top: 1px solid #49e149;
+}
+.parrafo__text{
+    margin: 0.6rem 1rem 0.2rem 1rem;
+}
+.negrita{
+    font-weight: bolder;
+}
+.section-image{
+    width: 50%;
+    margin: auto;
+}
+.image{
+    grid-area: section-image;
+    width: 100%;
+    margin-bottom: 0.7rem;
+    border-radius: 1rem;
+    border: 1.7px solid #49e149;
+    box-shadow: 3px 1px 5px #383737;
+}
+
+
+/*Estilos del footer*/
+.pie{
+    grid-area: pie;
+    width: 100%;
+    margin: .5rem auto;
+    padding: .5rem;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        grid-column: 1, 1fr;
+        grid-row: 3, 1fr;
+        background-color: #656965;
+    }
+    .list-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .principal{
+        width: 90%;
+    }
+    .titlep{
+        font-size: 4rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .titlec{
+        font-size: 4rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .section-image{
+        width: 80%;
+    }
+}
+
+/*Modificaciones sección Contacto*/
+
+.titlec{
+    width: 100%;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: .15rem .15rem .15rem #32653b;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000
+}
+.formulario{
+    background-color: rgb(172, 208, 181);
+    margin: auto;
+    width: 75%;
+    text-align: left;
+    line-height: 2rem;
+    border: 1.8px solid #49e149;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.seccion_form{
+    width: auto;
+    margin: 1rem;
+}
+label{
+    display: block;
+    color: rgb(109, 108, 108);
+    font-size: 1.25rem;
+    margin: 0 0 0 .5rem;
+}
+input{
+    border: none;
+    border-radius: .25rem;
+    width: 100%;
+    height: 1.5rem;
+}
+select{
+    border: none;
+    border-radius: .25rem;
+    margin: 0 0 0 .5rem;
+}
+textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+}
+.submit_boton{
+    width: 100%;
+}
+.boton{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: .5rem;
+    background-color: #4cb07c;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Modificaciones sección Nosotros*/
+.parrafo__nos{
+    line-height: 1.5rem;
+    margin-top: .6rem;
+}
+
+/* Modicaciones de la sección información */
+
+.abonos{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    margin: 2rem auto 0;
+    justify-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.planes{
+    background: url(../imagenes-proyecto/megas.jpg);
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color:rgb(155, 155, 155);
+    border-radius: 10px;
+    box-shadow: 5px 1px 5px #383737;
+}
+.planes__num{
+    font-size: 3rem;
+    text-align: center;
+}
+.planes__text{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* Modificaciones sección Preguntas */
+
+.preguntas{
+    background-color: rgb(172, 208, 181);
+    width: 80%;
+    margin: 1rem auto 1rem;
+    border-radius: .25rem;
+    border: 1.8px solid #49e149;
+    padding: 1rem;
+}
+.preguntas__title{
+    margin-bottom: 1rem;
+    line-height: 2.25rem;
+}
+.preguntas1{
+    background-color: rgb(172, 208, 181);
+    width: 80%;
+    margin: 1rem auto 1rem;
+    border-radius: .25rem;
+    border: 1.8px solid #49e149;
+    padding: 1rem;
+}
+textarea{
+    border: none;
+}
