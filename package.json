@@ -1,0 +1,20 @@
+{
+  "name": "alexis-ronaldo-franco---original",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/inicio.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexis196/Empresa-ISP---Alexis-Ronaldo-Franco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexis196/Empresa-ISP---Alexis-Ronaldo-Franco/issues"
+  },
+  "homepage": "https://github.com/Alexis196/Empresa-ISP---Alexis-Ronaldo-Franco#readme"
+}

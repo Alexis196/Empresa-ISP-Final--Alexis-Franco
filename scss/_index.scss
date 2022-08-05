@@ -1,0 +1,55 @@
+@import "variable";
+
+.principal{
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"titlep"
+                        "parrafo"
+                        "section-image";
+    margin: auto;
+    width: 80%;
+    min-height: 85vh;
+    align-items: center;
+    border-bottom: 1px solid $cprimario;
+}
+.titlep{
+    grid-area: titlep;
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: .15rem .15rem .15rem #32653b;
+    text-align: center;
+    color: $cprimario;
+    #villa{
+        color:rgb(0, 0, 0);
+    }
+}
+.parrafo{
+    grid-area: parrafo;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 1.5rem;
+    border-top: 1px solid $cprimario;
+    .parrafo__text{
+        margin: 0.6rem 1rem 0.2rem 1rem;
+    }
+    .negrita{
+    font-weight: bolder;
+    }
+}
+.section-image{
+    width: 50%;
+    margin: auto;
+    .image{
+        grid-area: section-image;
+        width: 100%;
+        margin-bottom: 0.7rem;
+        border-radius: 1rem;
+        border: 1.7px solid $cprimario;
+        box-shadow: 3px 1px 5px #383737;
+    }
+}

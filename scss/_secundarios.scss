@@ -1,0 +1,142 @@
+@import "variable";
+
+.titlec{
+    width: 100%;
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: .15rem .15rem .15rem #32653b;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000
+}
+.formulario{
+    background-color: rgb(172, 208, 181);
+    margin: auto;
+    width: 75%;
+    text-align: left;
+    line-height: 2rem;
+    border: 1.8px solid $cprimario;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .seccion_form{
+        width: auto;
+        margin: 1rem;
+    }
+    label{
+        display: block;
+        color: rgb(109, 108, 108);
+        font-size: 1.25rem;
+        margin: 0 0 0 .5rem;
+    }
+    input{
+        border: none;
+        border-radius: .25rem;
+        width: 100%;
+        height: 1.5rem;
+    }
+    select{
+        border: none;
+        border-radius: .25rem;
+        margin: 0 0 0 .5rem;
+    }
+    textarea{
+        min-height: 120px;
+        width: 100%;
+        padding: 0.625rem;
+    }
+    .submit_boton{
+        width: 100%;
+    }
+    .boton{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: .5rem;
+        background-color: #4cb07c;
+        color: #fff;
+        cursor: pointer;
+    }   
+}
+
+/*Modificaciones sección Nosotros*/
+.parrafo__nos{
+    line-height: 1.5rem;
+    margin-top: .6rem;
+}
+
+/* Modicaciones de la sección información */
+
+.abonos{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    margin: 2rem auto 0;
+    justify-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.planes{
+    background: url(../imagenes-proyecto/megas.jpg);
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color:rgb(155, 155, 155);
+    border-radius: 10px;
+    box-shadow: 5px 1px 5px #383737;
+    .planes__num{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .planes__text{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+/* Modificaciones sección Preguntas */
+
+.preguntas{
+    background-image: linear-gradient(#aff3c4, rgb(190, 239, 210), rgb(188, 216, 216));
+    width: 80%;
+    margin: 1rem auto 1rem;
+    border-radius: .25rem;
+    border: 1.8px solid $cprimario;
+    padding: 1rem;
+    &:hover{
+        transform: scale(1.1);
+    }
+    .preguntas__title{
+        margin-bottom: 1rem;
+        line-height: 2.25rem;
+    }
+}
+.preguntas1{
+    background-color: rgb(172, 208, 181);
+    width: 80%;
+    margin: 1rem auto 1rem;
+    border-radius: .25rem;
+    border: 1.8px solid $cprimario;
+    padding: 1rem;
+    .pregunta{
+        margin-bottom: 2rem;
+    }
+    textarea{
+        width: 100%;
+        border: none;
+    }
+    .boton{
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: .5rem;
+        background-color: #4cb07c;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+    }
+}

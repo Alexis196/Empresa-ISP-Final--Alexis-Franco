@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "variable";
+
+.container{
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"header"
+                        "principal"
+                        "pie";
+    width: 100%;
+    background-image: linear-gradient(#757575, #848484 ,#a0a0a0, #f2efef);
+}
+
+/*estilos del menú de navegación*/
+.header{
+    position: sticky;
+    top: 0;
+}
+.cabecera{
+    width: 100%;
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #656965;
+    .list-nav{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        .list{
+            margin: 0.34rem;
+            padding: 0.3rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family:'Trebuchet MS', Arial, sans-serif;
+            &:hover{
+                background-color: $cprimario;
+                transition: background-color .6s;
+                border-radius: .5rem;
+            }
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 1.25rem;
+                margin-right: .5rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+
+.div-logo{
+    display: flex;
+    align-items: center;
+    .logo{
+        width: 3rem;
+        margin: 0.1rem;
+        /* Animación del logo */
+        animation-name: mover;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+/*Estilos del contenido principal*/
+.principal{
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"titlep"
+                        "parrafo"
+                        "section-image";
+    margin: auto;
+    width: 80%;
+    min-height: 85vh;
+    align-items: center;
+    border-bottom: 1px solid $cprimario;
+}
+
+/*Estilos del footer*/
+.pie{
+    grid-area: pie;
+    width: 100%;
+    margin: .5rem auto;
+    padding: .5rem;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+    }
+}
