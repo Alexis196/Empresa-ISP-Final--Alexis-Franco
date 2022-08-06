@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    background-color: #656965;
+    background-color: map-get($map: $colores, $key: cnavbar);
     .list-nav{
         display: flex;
         align-items: center;
@@ -39,7 +39,7 @@
             font-size: 1rem;
             font-family:'Trebuchet MS', Arial, sans-serif;
             &:hover{
-                background-color: $cprimario;
+                background-color: map-get($map: $colores, $key:cprimario );
                 transition: background-color .6s;
                 border-radius: .5rem;
             }
@@ -91,7 +91,7 @@
     width: 80%;
     min-height: 85vh;
     align-items: center;
-    border-bottom: 1px solid $cprimario;
+    border-bottom: 1px solid map-get($map: $colores, $key: cprimario);
 }
 
 /*Estilos del footer*/

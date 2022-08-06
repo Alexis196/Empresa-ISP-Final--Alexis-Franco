@@ -16,7 +16,7 @@
     width: 75%;
     text-align: left;
     line-height: 2rem;
-    border: 1.8px solid $cprimario;
+    border: 1.8px solid map-get($map: $colores, $key: cprimario);
     border-radius: .5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -105,14 +105,13 @@
     width: 80%;
     margin: 1rem auto 1rem;
     border-radius: .25rem;
-    border: 1.8px solid $cprimario;
+    border: 1.8px solid map-get($map: $colores, $key: cprimario);
     padding: 1rem;
     &:hover{
         transform: scale(1.1);
     }
     .preguntas__title{
-        margin-bottom: 1rem;
-        line-height: 2.25rem;
+        @extend .preguntas
     }
 }
 .preguntas1{
@@ -120,7 +119,7 @@
     width: 80%;
     margin: 1rem auto 1rem;
     border-radius: .25rem;
-    border: 1.8px solid $cprimario;
+    border: 1.8px solid map-get($map: $colores, $key: cprimario);
     padding: 1rem;
     .pregunta{
         margin-bottom: 2rem;

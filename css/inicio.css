@@ -256,7 +256,7 @@
 }
 
 /* Modificaciones sección Preguntas */
-.preguntas {
+.preguntas, .preguntas .preguntas__title {
   background-image: linear-gradient(#aff3c4, rgb(190, 239, 210), rgb(188, 216, 216));
   width: 80%;
   margin: 1rem auto 1rem;
@@ -264,14 +264,9 @@
   border: 1.8px solid #49e149;
   padding: 1rem;
 }
-.preguntas:hover {
+.preguntas:hover, .preguntas .preguntas__title:hover {
   transform: scale(1.1);
 }
-.preguntas .preguntas__title {
-  margin-bottom: 1rem;
-  line-height: 2.25rem;
-}
-
 .preguntas1 {
   background-color: rgb(172, 208, 181);
   width: 80%;
