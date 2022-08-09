@@ -1,5 +1,8 @@
 @import "variable";
 
+.principal2{
+    border-top: 1px solid map-get($map: $colores, $key: cprimario);
+}
 .titlec{
     width: 100%;
     font-size: 3rem;
@@ -73,18 +76,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 4fr);
-    margin: 2rem auto 0;
+    margin: 2rem auto 1rem;
     justify-items: center;
     justify-content: center;
     gap: .5rem;
 }
 .planes{
-    background: url(../imagenes-proyecto/megas.jpg);
+    background: url(../imagenes-proyecto/lineasmegas.jpg);
     background-size: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    color:rgb(155, 155, 155);
+    color:rgb(55, 120, 117);
     border-radius: 10px;
     box-shadow: 5px 1px 5px #383737;
     .planes__num{
