@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(36, 186, 118);
     .list-nav{
         display: flex;
         align-items: center;
@@ -38,13 +38,13 @@
             font-size: 1rem;
             font-family:'Trebuchet MS', Arial, sans-serif;
             &:hover{
-                background-color: map-get($map: $colores, $key:cnavbar );
+                background-color: rgb(100, 102, 100);;
                 transition: background-color .6s;
                 border-radius: .5rem;
             }
             a{
                 text-decoration: none;
-                color: map-get($map: $colores, $key:cprimario);
+                color: rgb(213, 213, 213);
                 font-size: 1.25rem;
                 margin: .5rem;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -80,10 +80,10 @@
     height: 60vh;
     font-size: 4rem;
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: .15rem .15rem .15rem #080909;
+    text-shadow: .25rem .25rem .5rem #000000;
     text-align: center;
     color: map-get($map: $colores, $key: cprimario);
-    background-image: url(../imagenes-proyecto/tecladob.jpg);
+    background-image: url(../imagenes-proyecto/usuario3.webp);
     background-size: 100%;
     background-position-y: 53%;
 
@@ -112,11 +112,12 @@
 .pie{
     background-image: url(../imagenes-proyecto/ola.svg);
     background-size: 100%;
-    background-position: 50%;
+    background-position-y: 43%;
     background-repeat: none;
 }
 .social {
     margin: 50px;
+    margin-top: .5rem;
 }
 .social p {
     text-align: center;
@@ -138,7 +139,18 @@
 }
 
 .fab{
-    color: map-get($map: $colores, $key: cprimario );
     width: 2.7rem;
     height: 2.7rem;
+}
+.fa-facebook-f{
+    color:rgb(74, 112, 238)
+}
+.fa-youtube{
+    color: rgb(198, 2, 2);
+}
+.fa-instagram{
+    color:#b300ff;
+}
+.fa-tiktok{
+    color: #73b9ef;
 }
