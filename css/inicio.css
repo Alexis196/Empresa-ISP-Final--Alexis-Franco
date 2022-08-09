@@ -11,7 +11,7 @@
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "header" "principal" "pie";
   width: 100%;
-  background-image: linear-gradient(#ebeaea, #ebeaea, #b8b8b8, #a6a4a4, #ebeaea, #ebeaea);
+  background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea, #ebeaea);
 }
 
 /*estilos del menú de navegación*/
@@ -82,9 +82,9 @@
   text-shadow: 0.15rem 0.15rem 0.15rem #080909;
   text-align: center;
   color: #49e149;
-  background-image: url(../imagenes-proyecto/tecladol.webp);
+  background-image: url(../imagenes-proyecto/tecladob.jpg);
   background-size: 100%;
-  background-position: 50%;
+  background-position-y: 53%;
 }
 .titlep #villa {
   color: rgb(226, 226, 226);
@@ -141,6 +141,10 @@
   color: #49e149;
   width: 2.7rem;
   height: 2.7rem;
+}
+
+.principal2 {
+  border-top: 1px solid #49e149;
 }
 
 .parrafo {

@@ -13,7 +13,7 @@
                         "principal"
                         "pie";
     width: 100%;
-    background-image: linear-gradient(#ebeaea, #ebeaea, #b8b8b8, #a6a4a4, #ebeaea,#ebeaea);
+    background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
 }
 
 /*estilos del menú de navegación*/
@@ -83,9 +83,9 @@
     text-shadow: .15rem .15rem .15rem #080909;
     text-align: center;
     color: map-get($map: $colores, $key: cprimario);
-    background-image: url(../imagenes-proyecto/tecladol.webp);
+    background-image: url(../imagenes-proyecto/tecladob.jpg);
     background-size: 100%;
-    background-position: 50%;
+    background-position-y: 53%;
 
     #villa{
         color:rgb(226, 226, 226);

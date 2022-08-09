@@ -1,6 +1,8 @@
 @import "variable";
 
-
+.principal2{
+    border-top: 1px solid map-get($map: $colores, $key: cprimario);
+}
 .parrafo{
     grid-area: parrafo;
     font-size: 1.3rem;
