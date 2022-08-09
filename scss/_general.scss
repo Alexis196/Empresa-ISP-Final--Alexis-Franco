@@ -119,7 +119,7 @@
 }
 
 .fab{
-    color: map-get($map: $colores, $key: cprimario );
+    color: map-get($map: $colores, $key: iconos );
     width: 2.7rem;
     height: 2.7rem;
 }
