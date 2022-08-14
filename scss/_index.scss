@@ -9,7 +9,6 @@
     margin: 2rem 0 0.7rem 0;
     font-family: 'Libre Franklin', sans-serif;
     line-height: 1.5rem;
-    // border-top: 1px solid map-get($map: $colores, $key: cprimario);
     .parrafo__text{
         margin: 0.6rem 1rem 1.5rem 1rem;
     }
@@ -25,7 +24,7 @@
         width: 100%;
         margin-bottom: 0.7rem;
         border-radius: 1rem;
-        border: 1.7px solid map-get($map: $colores, $key: cprimario);
+        border: 1px solid map-get($map: $colores, $key: cprimario);
         box-shadow: 3px 1px 5px #383737;
     }
 }

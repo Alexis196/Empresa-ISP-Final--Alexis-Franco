@@ -1,8 +1,8 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: $mobile) {
     .container{
         grid-column: 1, 1fr;
         grid-row: 3, 1fr;
-        background-color: #656965;
+        background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
     }
     .cabecera {
         width: 100%;
@@ -12,7 +12,56 @@
         position: sticky;
         top: 0;
         padding: 0.5rem;
-        background-color: #656965;
+        background-color: rgb(232, 223, 223);
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        .div-logo{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .menu-listas{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .titlep{
+        font-size: 2rem;
+        margin:0;
+        text-align: center;
+    }
+    .titlec{
+        text-align: center;
+        margin: 0;
+    }
+    .section-image{
+        width: 80%;
+    }
+    .formulario{
+        background-size: cover;
+        background-position: center;
+    }
+    .pie{
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .container{
+        grid-column: 1, 1fr;
+        grid-row: 3, 1fr;
+        background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
+    }
+    .cabecera {
+        width: 100%;
+        grid-area: cabecera;
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        padding: 0.5rem;
+        background-color: rgb(232, 223, 223);
         flex-direction: column;
         .div-logo{
             display: flex;
@@ -34,61 +83,29 @@
         }
         .list a{
             font-size: .7rem;
+            color: rgb(108, 106, 106);
         }
     }
     .titlec {
         width: 100%;
         font-size: 2rem;
-        margin: 2rem 0;
+        margin: 0;
         font-family: 'Roboto Condensed', sans-serif;
-        text-shadow: 0.15rem 0.15rem 0.15rem #32653b;
+        text-shadow: .25rem .25rem .5rem #000000;
         text-transform: uppercase;
-        text-align: center;
-        color: #000000;
+        color: #f2efef;
     }
     .preguntas__title{
         font-size: 1.5rem;
     }
-}
 
-@media screen and (max-width: $mobile) {
-    .container{
-        grid-column: 1, 1fr;
-        grid-row: 3, 1fr;
-        background-color: #656965;
+    .formulario{
+        background-size: cover;
+        background-position: center;
     }
-    .cabecera {
-        width: 100%;
-        grid-area: cabecera;
-        display: flex;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-        padding: 0.5rem;
-        background-color: #656965;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        .div-logo{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        .menu-listas{
-            display: flex;
-            justify-content: center;
-        }
-    }
-    .titlep{
-        font-size: 2rem;
-        margin: 2rem 0;
-        text-align: center;
-    }
-    .titlec{
-        text-align: center;
-        margin: 2rem 0;
-    }
-    .section-image{
-        width: 80%;
+
+
+    .pie{
+        height: 8rem;
     }
 }

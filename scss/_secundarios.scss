@@ -10,18 +10,31 @@
     height: 60vh;
     width: map-get($map: $anchos, $key: completo);
     background-image: url(../imagenes-proyecto/search.webp);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position: center;
     font-size: 3rem;
     font-family: 'Roboto Condensed', sans-serif;
     text-shadow: .25rem .25rem .5rem #000000;
     text-transform: uppercase;
-    text-align: center;
-    color: #f2efef
+    color: #f2efef;
+}
+.titlen{
+    background-image: url(../imagenes-proyecto/nosotros1.webp);
+    background-size: cover;
+}
+.titlei{
+    background-image: url(../imagenes-proyecto/info.jpg);
+    background-size: cover;
+}
+.titlepr{
+    background-image: url(../imagenes-proyecto/preguntas1.jpg);
+    background-size: cover;
 }
 .formulario{
-    background-color: rgb(172, 208, 181);
+    background-image: url(../imagenes-proyecto/form2.jpg);
+    background-size: cover;
+    background-position: center;
     margin: auto;
     width: 75%;
     text-align: left;
@@ -33,6 +46,9 @@
     .seccion_form{
         width: auto;
         margin: 1rem;
+    }
+    .seccionlabel{
+        text-shadow: 0rem 0rem .5rem rgb(255, 255, 255);
     }
     label{
         display: block;
@@ -64,7 +80,7 @@
         width: 90%;
         margin: auto;
         margin-bottom: .5rem;
-        background-color: #4cb07c;
+        background-color: #a962c7;
         color: #fff;
         cursor: pointer;
     }   
@@ -74,6 +90,11 @@
 .parrafo__nos{
     line-height: 1.5rem;
     margin-top: .6rem;
+    text-align: justify;
+}
+.titleh2{
+    margin: 1.5rem;
+    color: #51bf95;
 }
 
 /* Modicaciones de la sección información */
@@ -87,23 +108,25 @@
     justify-items: center;
     justify-content: center;
     gap: .5rem;
-}
-.planes{
-    background: url(../imagenes-proyecto/lineasmegas.jpg);
-    background-size: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    color:rgb(55, 120, 117);
-    border-radius: 10px;
-    box-shadow: 5px 1px 5px #383737;
-    .planes__num{
-        font-size: 3rem;
-        text-align: center;
-    }
-    .planes__text{
-        font-size: 3rem;
-        text-align: center;
+    .planes{
+        background: url(../imagenes-proyecto/lineasmegas1.jpg);
+        background-size: 100%;
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 3.5rem;
+        flex-direction: column;
+        color:rgb(47, 154, 129);
+        border-radius: 10px;
+        box-shadow: 5px 2px 5px #383737;
+        .planes__num{
+            font-size: 3rem;
+        }
+        .planes__text{
+            font-size: 3rem;
+        }
     }
 }
 
@@ -111,19 +134,16 @@
 /* Modificaciones sección Preguntas */
 
 .preguntas{
-    background-image: linear-gradient(#aff3c4, rgb(190, 239, 210), rgb(188, 216, 216));
+    background-image: linear-gradient(rgb(169, 237, 213), rgb(145, 205, 187), rgb(131, 228, 209));
     width: map-get($map: $anchos, $key: principal );
     margin: 1rem auto 1rem;
+    line-height: 2rem;
     border-radius: .25rem;
     border: 1.8px solid map-get($map: $colores, $key: cprimario);
     padding: 1rem;
-    &:hover{
-        transform: scale(1.1);
-    }
-    
 }
 .preguntas1{
-    background-color: rgb(172, 208, 181);
+    background-image: linear-gradient(rgb(169, 237, 213), rgb(128, 192, 173), rgb(131, 228, 209));
     width: map-get($map: $anchos, $key: principal );
     margin: 1rem auto 1rem;
     border-radius: .25rem;
@@ -137,13 +157,15 @@
         border: none;
     }
     .boton{
-        display: block;
         width: map-get($map: $anchos, $key: completo );
+        background-color: #3bbfa0;
+        height: 1.5rem;
+        border: none;
+        display: block;
         margin: auto;
-        margin-bottom: .5rem;
-        background-color: #4cb07c;
+        margin-bottom: .2rem;
+        margin-top: .5rem;
         color: #fff;
         cursor: pointer;
-        border: none;
     }
 }

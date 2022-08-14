@@ -99,7 +99,6 @@
   grid-template-areas: "titlec" "parrafo" "section-image";
   margin: auto;
   width: 80%;
-  min-height: 85vh;
   align-items: center;
   border-bottom: 1px solid #49e149;
 }
@@ -186,7 +185,7 @@
   width: 100%;
   margin-bottom: 0.7rem;
   border-radius: 1rem;
-  border: 1.7px solid #49e149;
+  border: 1px solid #49e149;
   box-shadow: 3px 1px 5px #383737;
 }
 
@@ -201,19 +200,35 @@
   height: 60vh;
   width: 100%;
   background-image: url(../imagenes-proyecto/search.webp);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 50%;
+  background-position: center;
   font-size: 3rem;
   font-family: "Roboto Condensed", sans-serif;
   text-shadow: 0.25rem 0.25rem 0.5rem #000000;
   text-transform: uppercase;
-  text-align: center;
   color: #f2efef;
 }
 
+.titlen {
+  background-image: url(../imagenes-proyecto/nosotros1.webp);
+  background-size: cover;
+}
+
+.titlei {
+  background-image: url(../imagenes-proyecto/info.jpg);
+  background-size: cover;
+}
+
+.titlepr {
+  background-image: url(../imagenes-proyecto/preguntas1.jpg);
+  background-size: cover;
+}
+
 .formulario {
-  background-color: rgb(172, 208, 181);
+  background-image: url(../imagenes-proyecto/form2.jpg);
+  background-size: cover;
+  background-position: center;
   margin: auto;
   width: 75%;
   text-align: left;
@@ -226,6 +241,9 @@
 .formulario .seccion_form {
   width: auto;
   margin: 1rem;
+}
+.formulario .seccionlabel {
+  text-shadow: 0rem 0rem 0.5rem rgb(255, 255, 255);
 }
 .formulario label {
   display: block;
@@ -257,7 +275,7 @@
   width: 90%;
   margin: auto;
   margin-bottom: 0.5rem;
-  background-color: #4cb07c;
+  background-color: #a962c7;
   color: #fff;
   cursor: pointer;
 }
@@ -266,6 +284,12 @@
 .parrafo__nos {
   line-height: 1.5rem;
   margin-top: 0.6rem;
+  text-align: justify;
+}
+
+.titleh2 {
+  margin: 1.5rem;
+  color: #51bf95;
 }
 
 /* Modicaciones de la sección información */
@@ -279,41 +303,40 @@
   justify-content: center;
   gap: 0.5rem;
 }
-
-.planes {
-  background: url(../imagenes-proyecto/lineasmegas.jpg);
+.abonos .planes {
+  background: url(../imagenes-proyecto/lineasmegas1.jpg);
   background-size: 100%;
   width: 100%;
+  height: 8rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 3.5rem;
   flex-direction: column;
-  color: rgb(55, 120, 117);
+  color: rgb(47, 154, 129);
   border-radius: 10px;
-  box-shadow: 5px 1px 5px #383737;
+  box-shadow: 5px 2px 5px #383737;
 }
-.planes .planes__num {
+.abonos .planes .planes__num {
   font-size: 3rem;
-  text-align: center;
 }
-.planes .planes__text {
+.abonos .planes .planes__text {
   font-size: 3rem;
-  text-align: center;
 }
 
 /* Modificaciones sección Preguntas */
 .preguntas {
-  background-image: linear-gradient(#aff3c4, rgb(190, 239, 210), rgb(188, 216, 216));
+  background-image: linear-gradient(rgb(169, 237, 213), rgb(145, 205, 187), rgb(131, 228, 209));
   width: 80%;
   margin: 1rem auto 1rem;
+  line-height: 2rem;
   border-radius: 0.25rem;
   border: 1.8px solid #49e149;
   padding: 1rem;
 }
-.preguntas:hover {
-  transform: scale(1.1);
-}
 
 .preguntas1 {
-  background-color: rgb(172, 208, 181);
+  background-image: linear-gradient(rgb(169, 237, 213), rgb(128, 192, 173), rgb(131, 228, 209));
   width: 80%;
   margin: 1rem auto 1rem;
   border-radius: 0.25rem;
@@ -328,21 +351,23 @@
   border: none;
 }
 .preguntas1 .boton {
-  display: block;
   width: 100%;
+  background-color: #3bbfa0;
+  height: 1.5rem;
+  border: none;
+  display: block;
   margin: auto;
-  margin-bottom: 0.5rem;
-  background-color: #4cb07c;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
   color: #fff;
   cursor: pointer;
-  border: none;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .container {
     grid-column: 1, 1fr;
     grid-row: 3, 1fr;
-    background-color: #656965;
+    background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea, #ebeaea);
   }
   .cabecera {
     width: 100%;
@@ -352,7 +377,55 @@
     position: sticky;
     top: 0;
     padding: 0.5rem;
-    background-color: #656965;
+    background-color: rgb(232, 223, 223);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .cabecera .div-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cabecera .menu-listas {
+    display: flex;
+    justify-content: center;
+  }
+  .titlep {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .titlec {
+    text-align: center;
+    margin: 0;
+  }
+  .section-image {
+    width: 80%;
+  }
+  .formulario {
+    background-size: cover;
+    background-position: center;
+  }
+  .pie {
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 385px) {
+  .container {
+    grid-column: 1, 1fr;
+    grid-row: 3, 1fr;
+    background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea, #ebeaea);
+  }
+  .cabecera {
+    width: 100%;
+    grid-area: cabecera;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0.5rem;
+    background-color: rgb(232, 223, 223);
     flex-direction: column;
   }
   .cabecera .div-logo {
@@ -375,60 +448,26 @@
   }
   .cabecera .list a {
     font-size: 0.7rem;
+    color: rgb(108, 106, 106);
   }
   .titlec {
     width: 100%;
     font-size: 2rem;
-    margin: 2rem 0;
+    margin: 0;
     font-family: "Roboto Condensed", sans-serif;
-    text-shadow: 0.15rem 0.15rem 0.15rem #32653b;
+    text-shadow: 0.25rem 0.25rem 0.5rem #000000;
     text-transform: uppercase;
-    text-align: center;
-    color: #000000;
+    color: #f2efef;
   }
   .preguntas__title {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    grid-column: 1, 1fr;
-    grid-row: 3, 1fr;
-    background-color: #656965;
+  .formulario {
+    background-size: cover;
+    background-position: center;
   }
-  .cabecera {
-    width: 100%;
-    grid-area: cabecera;
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    padding: 0.5rem;
-    background-color: #656965;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-  }
-  .cabecera .div-logo {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .cabecera .menu-listas {
-    display: flex;
-    justify-content: center;
-  }
-  .titlep {
-    font-size: 2rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
-  .titlec {
-    text-align: center;
-    margin: 2rem 0;
-  }
-  .section-image {
-    width: 80%;
+  .pie {
+    height: 8rem;
   }
 }
 
