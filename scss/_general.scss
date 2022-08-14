@@ -84,8 +84,8 @@
     text-align: center;
     color: map-get($map: $colores, $key: cprimario);
     background-image: url(../imagenes-proyecto/usuario3.webp);
-    background-size: 100%;
-    background-position-y: 53%;
+    background-size: cover;
+    background-position: center;
 
     #villa{
         color:rgb(226, 226, 226);
@@ -110,9 +110,9 @@
 /* follow */
 .pie{
     background-image: url(../imagenes-proyecto/ola.svg);
-    background-size: 100%;
-    background-position-y: 43%;
-    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .social {
     margin: 50px;
