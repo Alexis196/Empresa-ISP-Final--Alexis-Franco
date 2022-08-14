@@ -195,14 +195,21 @@
 }
 
 .titlec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
   width: 100%;
+  background-image: url(../imagenes-proyecto/search.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
   font-size: 3rem;
-  margin: 2rem 0;
   font-family: "Roboto Condensed", sans-serif;
-  text-shadow: 0.15rem 0.15rem 0.15rem #32653b;
+  text-shadow: 0.25rem 0.25rem 0.5rem #000000;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #f2efef;
 }
 
 .formulario {
@@ -227,7 +234,7 @@
   margin: 0 0 0 0.5rem;
 }
 .formulario input {
-  border: none;
+  border: 1px solid #000000;
   border-radius: 0.25rem;
   width: 100%;
   height: 1.5rem;

@@ -12,7 +12,7 @@
     grid-template-areas:"header"
                         "principal"
                         "pie";
-    width: 100%;
+    width: map-get($map: $anchos, $key: completo );
     background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
 }
 
@@ -22,7 +22,7 @@
     top: 0;
 }
 .cabecera{
-    width: 100%;
+    width: map-get($map: $anchos, $key: completo );
     grid-area: cabecera;
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: map-get($map: $anchos, $key: completo );
     height: 60vh;
     font-size: 4rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -101,7 +101,7 @@
                         "parrafo"
                         "section-image";
     margin: auto;
-    width: 80%;
+    width: map-get($map: $anchos, $key: principal );
     min-height: 85vh;
     align-items: center;
     border-bottom: 1px solid map-get($map: $colores, $key: cprimario);

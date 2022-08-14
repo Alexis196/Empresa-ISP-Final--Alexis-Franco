@@ -4,14 +4,21 @@
     border-top: 1px solid map-get($map: $colores, $key: cprimario);
 }
 .titlec{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: map-get($map: $anchos, $key: completo);
+    background-image: url(../imagenes-proyecto/search.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
     font-size: 3rem;
-    margin: 2rem 0;
     font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: .15rem .15rem .15rem #32653b;
+    text-shadow: .25rem .25rem .5rem #000000;
     text-transform: uppercase;
     text-align: center;
-    color: #000000
+    color: #f2efef
 }
 .formulario{
     background-color: rgb(172, 208, 181);
@@ -34,7 +41,7 @@
         margin: 0 0 0 .5rem;
     }
     input{
-        border: none;
+        border: 1px solid #000000;
         border-radius: .25rem;
         width: 100%;
         height: 1.5rem;
@@ -105,7 +112,7 @@
 
 .preguntas{
     background-image: linear-gradient(#aff3c4, rgb(190, 239, 210), rgb(188, 216, 216));
-    width: 80%;
+    width: map-get($map: $anchos, $key: principal );
     margin: 1rem auto 1rem;
     border-radius: .25rem;
     border: 1.8px solid map-get($map: $colores, $key: cprimario);
@@ -117,7 +124,7 @@
 }
 .preguntas1{
     background-color: rgb(172, 208, 181);
-    width: 80%;
+    width: map-get($map: $anchos, $key: principal );
     margin: 1rem auto 1rem;
     border-radius: .25rem;
     border: 1.8px solid map-get($map: $colores, $key: cprimario);
@@ -126,12 +133,12 @@
         margin-bottom: 2rem;
     }
     textarea{
-        width: 100%;
+        width: map-get($map: $anchos, $key: completo );
         border: none;
     }
     .boton{
         display: block;
-        width: 100%;
+        width: map-get($map: $anchos, $key: completo );
         margin: auto;
         margin-bottom: .5rem;
         background-color: #4cb07c;
