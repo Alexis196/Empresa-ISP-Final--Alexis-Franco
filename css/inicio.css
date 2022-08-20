@@ -200,6 +200,11 @@
   border-top: 1px solid #49e149;
 }
 
+.container-flui {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
 .titlec {
   display: flex;
   justify-content: center;
