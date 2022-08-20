@@ -3,10 +3,11 @@
 .principal2{
     border-top: 1px solid map-get($map: $colores, $key: cprimario);
 }
-.container-flui{
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-}
+
+
+/* Títulos y backgorund */
+
+
 .titlec{
     display: flex;
     justify-content: center;
@@ -35,6 +36,11 @@
     background-image: url(../imagenes-proyecto/preguntas1.jpg);
     background-size: cover;
 }
+
+
+/* Modificaciones sección Contacto*/
+
+
 .formulario{
     background-image: url(../imagenes-proyecto/form2.jpg);
     background-size: cover;
@@ -91,7 +97,10 @@
     }   
 }
 
+
 /*Modificaciones sección Nosotros*/
+
+
 .parrafo__nos{
     line-height: 1.5rem;
     margin-top: .6rem;
@@ -102,7 +111,9 @@
     color: #51bf95;
 }
 
+
 /* Modicaciones de la sección información */
+
 
 .abonos{
     width: 60%;
@@ -137,6 +148,7 @@
 
 
 /* Modificaciones sección Preguntas */
+
 
 .preguntas{
     background-image: linear-gradient(rgb(169, 237, 213), rgb(145, 205, 187), rgb(131, 228, 209));

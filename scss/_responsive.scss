@@ -5,51 +5,36 @@
         grid-row: 3, 1fr;
         background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
     }
-    .navbar{
-        --bs-navbar-padding-x: -1;
-        --bs-navbar-padding-y: 0;
-    }
-    .cabecera {
-        width: 100%;
-        grid-area: cabecera;
+
+.div-logo{
         display: flex;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-        padding: 0.5rem;
-        background-color: rgb(232, 223, 223);
+        align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        .div-logo{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+    }
         .menu-listas{
             display: flex;
             justify-content: center;
         }
+
+.titlep{
+    background-size: cover;
+    background-position: center;
+    font-size: 2rem;
+    margin:0;
+    text-align: center;
     }
-    .titlep{
-        background-size: cover;
-        background-position: center;
-        font-size: 2rem;
-        margin:0;
-        text-align: center;
+.titlec{
+    text-align: center;
+    margin: 0;
     }
-    .titlec{
-        text-align: center;
-        margin: 0;
+.section-image{
+    width: 80%;
     }
-    .section-image{
-        width: 80%;
-    }
-    .formulario{
-        background-size: cover;
-        background-position: center;
-        .boton{
-            padding-bottom: 2rem;
+.formulario{
+    background-size: cover;
+    background-position: center;
+    .boton{
+        padding-bottom: 2rem;
         }
     }
     .pie{
@@ -64,43 +49,7 @@
         grid-row: 3, 1fr;
         background-image: linear-gradient(#ebeaea, #ebeaea, #e4e2e2, #dedada, #ebeaea,#ebeaea);
     }
-    .navbar{
-        --bs-navbar-padding-x: -1;
-        --bs-navbar-padding-y: 0;
-    }
-    .cabecera {
-        width: 100%;
-        grid-area: cabecera;
-        display: flex;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-        padding: 0.5rem;
-        background-color: rgb(232, 223, 223);
-        flex-direction: column;
-        .div-logo{
-            display: flex;
-            align-items: center;
-            flex-direction: column-reverse;
-        }
-        .menu-listas{
-            display: flex;
-            flex-direction: row;
-        }
-        .list-nav{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            flex-direction: row;
-        }
-        .list{
-            margin: 0;
-        }
-        .list a{
-            font-size: .7rem;
-            color: rgb(108, 106, 106);
-        }
-    }
+
     .titlec {
         width: 100%;
         font-size: 2rem;
